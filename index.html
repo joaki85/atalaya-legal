@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad · Atalaya</title>
+<meta name="description" content="Política de privacidad de Atalaya, la aplicación de vigilancia de incendios forestales en España.">
+<meta name="robots" content="index, follow">
+<style>
+  :root{
+    --teal-900:#002B33;
+    --teal-700:#005461;
+    --teal-500:#018790;
+    --teal-400:#01A0AA;
+    --amber:#E57400;
+    --ivory:#F7F9F9;
+    --ink:#12333A;
+    --muted:#5B7B82;
+    --rule:#DDE7E9;
+    --max:46rem;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:var(--ivory);
+    color:var(--ink);
+    font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size:16px;
+    line-height:1.68;
+    -webkit-font-smoothing:antialiased;
+  }
+  header{
+    background:linear-gradient(160deg,var(--teal-400) 0%,var(--teal-500) 45%,var(--teal-900) 100%);
+    color:#fff;
+    padding:3.25rem 1.5rem 2.75rem;
+  }
+  .wrap{max-width:var(--max);margin:0 auto}
+  .brand{display:flex;align-items:center;gap:.7rem;margin-bottom:1.6rem}
+  .mark{
+    width:34px;height:34px;flex:0 0 34px;border-radius:9px;
+    background:linear-gradient(180deg,#FFD85C,#E57400);
+    -webkit-mask:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'><path d='M24 4C33 19 44 28 44 38c0 8-9 12-20 12S4 46 4 38C4 30 8 26 12 21c.3 6 2 10 5.5 12C18 22 20 12 24 4z'/></svg>") center/contain no-repeat;
+    mask:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'><path d='M24 4C33 19 44 28 44 38c0 8-9 12-20 12S4 46 4 38C4 30 8 26 12 21c.3 6 2 10 5.5 12C18 22 20 12 24 4z'/></svg>") center/contain no-repeat;
+  }
+  .brand span{font-weight:700;font-size:1.05rem;letter-spacing:-.01em}
+  header h1{margin:0 0 .55rem;font-size:clamp(1.7rem,4.4vw,2.35rem);letter-spacing:-.025em;line-height:1.18;font-weight:700}
+  header p{margin:0;color:rgba(255,255,255,.82);font-size:.95rem}
+  main{padding:2.75rem 1.5rem 4rem}
+  .lang{display:flex;gap:.4rem;margin-bottom:2.5rem}
+  .lang a{
+    text-decoration:none;font-size:.82rem;font-weight:600;letter-spacing:.02em;
+    padding:.42rem .9rem;border-radius:100px;border:1px solid var(--rule);
+    color:var(--muted);background:#fff;transition:.15s;
+  }
+  .lang a:hover{border-color:var(--teal-500);color:var(--teal-700)}
+  .lang a[aria-current]{background:var(--teal-700);border-color:var(--teal-700);color:#fff}
+  section+section{margin-top:2.4rem;padding-top:2.4rem;border-top:1px solid var(--rule)}
+  h2{
+    font-size:1.06rem;font-weight:700;letter-spacing:-.01em;
+    margin:0 0 .85rem;color:var(--teal-900);
+    display:flex;gap:.6rem;align-items:baseline;
+  }
+  h2 .n{
+    font-size:.78rem;font-weight:700;color:var(--teal-500);
+    font-variant-numeric:tabular-nums;flex:0 0 auto;
+  }
+  h3{font-size:.95rem;font-weight:600;margin:1.5rem 0 .5rem;color:var(--teal-900)}
+  p{margin:0 0 .9rem}
+  ul{margin:0 0 1rem;padding-left:1.15rem}
+  li{margin-bottom:.42rem}
+  li::marker{color:var(--teal-500)}
+  a{color:var(--teal-700);text-underline-offset:2px}
+  strong{font-weight:600;color:var(--teal-900)}
+  .note{
+    background:#fff;border:1px solid var(--rule);border-left:3px solid var(--teal-500);
+    border-radius:0 8px 8px 0;padding:1rem 1.15rem;margin:1.25rem 0;
+    font-size:.92rem;color:var(--muted);
+  }
+  .note strong{color:var(--teal-900)}
+  .tablewrap{overflow-x:auto;margin:1rem 0 1.25rem;-webkit-overflow-scrolling:touch}
+  table{width:100%;border-collapse:collapse;font-size:.9rem;min-width:32rem}
+  th,td{text-align:left;padding:.62rem .7rem;border-bottom:1px solid var(--rule);vertical-align:top}
+  th{font-weight:600;color:var(--teal-900);background:rgba(1,135,144,.05);white-space:nowrap}
+  td:first-child{color:var(--ink)}
+  footer{
+    border-top:1px solid var(--rule);padding:1.9rem 1.5rem 3rem;
+    font-size:.85rem;color:var(--muted);
+  }
+  footer .wrap{display:flex;flex-wrap:wrap;gap:.5rem 1.25rem;justify-content:space-between}
+  @media (prefers-color-scheme:dark){
+    body{background:#0B2227;color:#D8E5E7}
+    header{background:linear-gradient(160deg,#017580 0%,#015460 45%,#00191F 100%)}
+    .lang a{background:#12333A;border-color:#22454C;color:#9FBCC1}
+    h2,h3,strong{color:#EAF3F4}
+    h2 .n{color:#3FC3CC}
+    a{color:#5FD3DB}
+    .note{background:#12333A;border-color:#22454C;border-left-color:#3FC3CC;color:#9FBCC1}
+    .note strong{color:#EAF3F4}
+    th{background:rgba(63,195,204,.08);color:#EAF3F4}
+    th,td{border-color:#22454C}
+    footer{border-color:#22454C;color:#8FAFB5}
+    section+section{border-color:#22454C}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="brand"><span class="mark" aria-hidden="true"></span><span>Atalaya</span></div>
+    <h1>Política de privacidad</h1>
+    <p>Incendios forestales en España · Última actualización: 28 de octubre de 2026</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <nav class="lang" aria-label="Idioma">
+    <a href="#es" aria-current="true">Español</a>
+    <a href="#en">English</a>
+  </nav>
+
+  <article id="es" lang="es">
+
+    <p>Esta política explica qué datos trata la aplicación <strong>Atalaya</strong> (paquete <code>es.atalaya.incendios</code>), para qué los usa y qué control tienes sobre ellos.</p>
+
+    <section>
+      <h2><span class="n">1</span>Quién es el responsable</h2>
+      <p>Atalaya es una aplicación desarrollada por el desarrollador que publica la app en Google Play.</p>
+      <p>Para cualquier cuestión relacionada con esta política o con tus datos, puedes escribir al <strong>correo de contacto que figura en la ficha de Atalaya en Google Play</strong>.</p>
+    </section>
+
+    <section>
+      <h2><span class="n">2</span>Qué datos se tratan</h2>
+
+      <h3>2.1. Ubicación</h3>
+      <p>Atalaya solicita permiso para acceder a tu ubicación aproximada o precisa. Se usa únicamente para:</p>
+      <ul>
+        <li>centrar el mapa en tu posición cuando lo pides;</li>
+        <li>calcular la distancia entre tú y los focos de calor;</li>
+        <li>comprobar si un foco entra dentro de una zona de vigilancia que hayas definido.</li>
+      </ul>
+      <p>La ubicación <strong>no se usa para publicidad</strong> ni se comparte con terceros con fines comerciales. Si no concedes el permiso, la app sigue funcionando: solo tendrás que mover el mapa a mano.</p>
+
+      <h3>2.2. Identificador anónimo del dispositivo</h3>
+      <p>Para poder enviarte un aviso cuando aparezca un foco en tus zonas de vigilancia, la app registra un identificador técnico en el servidor del desarrollador. Ese identificador <strong>no permite identificarte personalmente</strong>: no va asociado a tu nombre, tu correo, tu número de teléfono ni tu cuenta de Google.</p>
+
+      <h3>2.3. Zonas de vigilancia y preferencias</h3>
+      <p>Las zonas que marcas y los umbrales que configuras se guardan en el servidor asociados a ese identificador anónimo, porque son necesarios para poder lanzar la notificación. Contienen coordenadas y valores numéricos, no datos personales.</p>
+
+      <h3>2.4. Qué NO se recoge</h3>
+      <p>Atalaya no solicita ni almacena: nombre, correo electrónico, número de teléfono, contactos, fotos, mensajes, historial de navegación, datos de salud ni datos financieros. No hay registro de usuario ni inicio de sesión.</p>
+    </section>
+
+    <section>
+      <h2><span class="n">3</span>Para qué se usan</h2>
+      <ul>
+        <li>Mostrar el mapa y los focos de calor detectados por satélite.</li>
+        <li>Enviarte avisos de focos en tus zonas de vigilancia, solo si los activas.</li>
+        <li>Mantener el servicio funcionando y diagnosticar errores.</li>
+      </ul>
+      <p>No se elaboran perfiles comerciales ni se toman decisiones automatizadas con efectos legales sobre ti.</p>
+    </section>
+
+    <section>
+      <h2><span class="n">4</span>Base jurídica</h2>
+      <ul>
+        <li><strong>Consentimiento</strong> (art. 6.1.a RGPD) para la ubicación y las notificaciones. Puedes retirarlo en cualquier momento desde los ajustes del sistema.</li>
+        <li><strong>Interés legítimo</strong> (art. 6.1.f RGPD) para el funcionamiento técnico del servicio y su seguridad.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><span class="n">5</span>Con quién se comparten</h2>
+      <p>No se ceden datos a terceros con fines comerciales. Se producen estas comunicaciones técnicas, inevitables para que la app funcione:</p>
+      <div class="tablewrap">
+        <table>
+          <thead>
+            <tr><th>Destinatario</th><th>Qué recibe</th><th>Para qué</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Servidor del desarrollador</td>
+              <td>Identificador anónimo, zonas de vigilancia y preferencias</td>
+              <td>Calcular y enviar los avisos</td>
+            </tr>
+            <tr>
+              <td>Proveedores de teselas de mapa (OpenStreetMap, OpenTopoMap, Thunderforest)</td>
+              <td>Tu dirección IP y la zona del mapa que visualizas</td>
+              <td>Servir las imágenes del mapa</td>
+            </tr>
+            <tr>
+              <td>Google Play Services</td>
+              <td>Identificador de notificación</td>
+              <td>Entregar la notificación a tu dispositivo</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Ninguno de ellos recibe tu ubicación asociada a tu identidad.</p>
+    </section>
+
+    <section>
+      <h2><span class="n">6</span>Cuánto tiempo se conservan</h2>
+      <ul>
+        <li><strong>Zonas de vigilancia y preferencias:</strong> mientras la función esté activa. Si desactivas los avisos o desinstalas la app, se eliminan.</li>
+        <li><strong>Registros técnicos del servidor:</strong> un máximo de 30 días.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><span class="n">7</span>Tus derechos</h2>
+      <p>Puedes ejercer los derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad escribiendo al correo de contacto indicado en el punto 1. Responderemos en el plazo máximo de un mes.</p>
+      <p>Para darte de baja de los avisos y borrar tus zonas basta con desactivar «Avisarme de focos» en los ajustes de la app, o desinstalarla.</p>
+      <p>Si consideras que no se ha atendido correctamente tu solicitud, puedes reclamar ante la <a href="https://www.aepd.es" rel="noopener">Agencia Española de Protección de Datos</a>.</p>
+    </section>
+
+    <section>
+      <h2><span class="n">8</span>Menores</h2>
+      <p>Atalaya no está dirigida a menores de 14 años y no recoge conscientemente datos de menores.</p>
+    </section>
+
+    <section>
+      <h2><span class="n">9</span>Seguridad</h2>
+      <p>Las comunicaciones con el servidor se realizan mediante HTTPS. El acceso al servidor está restringido al desarrollador.</p>
+    </section>
+
+    <section>
+      <h2><span class="n">10</span>Cambios en esta política</h2>
+      <p>Si esta política cambia, se actualizará esta misma página y se indicará la fecha de la última revisión en la cabecera.</p>
+      <div class="note">
+        <strong>Aviso sobre el servicio.</strong> Atalaya es una aplicación informativa. No es un servicio oficial de emergencias y no sustituye al 112 ni a los avisos de Protección Civil, la AEMET o las autoridades de cada comunidad autónoma. Los focos son detecciones satelitales y pueden incluir falsos positivos o llegar con retraso. Ante cualquier fuego, llama al 112.
+      </div>
+    </section>
+
+  </article>
+
+  <article id="en" lang="en" style="margin-top:4rem;padding-top:2.5rem;border-top:2px solid var(--rule)">
+    <h1 style="font-size:1.5rem;margin:0 0 1.25rem;color:var(--teal-900);letter-spacing:-.02em">Privacy Policy</h1>
+
+    <p>This policy explains what data the <strong>Atalaya</strong> application (package <code>es.atalaya.incendios</code>) processes, what it is used for, and what control you have over it.</p>
+
+    <section>
+      <h2><span class="n">1</span>Who is responsible</h2>
+      <p>Atalaya is developed by the developer who publishes the app on Google Play. For any question about this policy or your data, write to the <strong>contact email shown on the Atalaya listing on Google Play</strong>.</p>
+    </section>
+
+    <section>
+      <h2><span class="n">2</span>What data is processed</h2>
+      <h3>2.1. Location</h3>
+      <p>Atalaya requests permission to access your approximate or precise location. It is used only to: centre the map on your position when you ask; calculate the distance between you and heat hotspots; and check whether a hotspot falls inside a watch zone you defined.</p>
+      <p>Location is <strong>never used for advertising</strong> and is not shared with third parties for commercial purposes. Without the permission the app still works; you simply move the map by hand.</p>
+      <h3>2.2. Anonymous device identifier</h3>
+      <p>To send you an alert when a hotspot appears in your watch zones, the app registers a technical identifier on the developer's server. That identifier <strong>cannot identify you personally</strong>: it is not linked to your name, email, phone number or Google account.</p>
+      <h3>2.3. Watch zones and preferences</h3>
+      <p>The zones you mark and the thresholds you set are stored on the server linked to that anonymous identifier, because they are required to trigger the notification. They contain coordinates and numeric values, not personal data.</p>
+      <h3>2.4. What is NOT collected</h3>
+      <p>Atalaya does not request or store: name, email address, phone number, contacts, photos, messages, browsing history, health data or financial data. There is no user account and no sign-in.</p>
+    </section>
+
+    <section>
+      <h2><span class="n">3</span>What it is used for</h2>
+      <ul>
+        <li>Showing the map and satellite-detected heat hotspots.</li>
+        <li>Sending you hotspot alerts for your watch zones, only if you enable them.</li>
+        <li>Keeping the service running and diagnosing errors.</li>
+      </ul>
+      <p>No commercial profiling is performed and no automated decisions with legal effects are made about you.</p>
+    </section>
+
+    <section>
+      <h2><span class="n">4</span>Legal basis</h2>
+      <ul>
+        <li><strong>Consent</strong> (Art. 6(1)(a) GDPR) for location and notifications. You may withdraw it at any time from your system settings.</li>
+        <li><strong>Legitimate interest</strong> (Art. 6(1)(f) GDPR) for the technical operation and security of the service.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><span class="n">5</span>Who it is shared with</h2>
+      <p>No data is transferred to third parties for commercial purposes. These technical communications are unavoidable for the app to work:</p>
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th>Recipient</th><th>What it receives</th><th>Purpose</th></tr></thead>
+          <tbody>
+            <tr><td>Developer's server</td><td>Anonymous identifier, watch zones and preferences</td><td>Computing and sending alerts</td></tr>
+            <tr><td>Map tile providers (OpenStreetMap, OpenTopoMap, Thunderforest)</td><td>Your IP address and the map area you view</td><td>Serving map imagery</td></tr>
+            <tr><td>Google Play Services</td><td>Notification identifier</td><td>Delivering the notification to your device</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>None of them receives your location linked to your identity.</p>
+    </section>
+
+    <section>
+      <h2><span class="n">6</span>How long it is kept</h2>
+      <ul>
+        <li><strong>Watch zones and preferences:</strong> while the feature is active. If you disable alerts or uninstall the app, they are deleted.</li>
+        <li><strong>Technical server logs:</strong> 30 days maximum.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2><span class="n">7</span>Your rights</h2>
+      <p>You may exercise your rights of access, rectification, erasure, objection, restriction and portability by writing to the contact email in section 1. We will respond within one month at most.</p>
+      <p>To stop the alerts and delete your zones, simply turn off “Notify me of hotspots” in the app settings, or uninstall the app.</p>
+      <p>If you believe your request has not been handled correctly, you may lodge a complaint with the <a href="https://www.aepd.es" rel="noopener">Spanish Data Protection Agency</a>.</p>
+    </section>
+
+    <section>
+      <h2><span class="n">8</span>Minors</h2>
+      <p>Atalaya is not directed at children under 14 and does not knowingly collect data from minors.</p>
+    </section>
+
+    <section>
+      <h2><span class="n">9</span>Security</h2>
+      <p>Communications with the server use HTTPS. Access to the server is restricted to the developer.</p>
+    </section>
+
+    <section>
+      <h2><span class="n">10</span>Changes to this policy</h2>
+      <p>If this policy changes, this same page will be updated and the last updated date shown in the header will be amended.</p>
+      <div class="note">
+        <strong>Service notice.</strong> Atalaya is an informational app. It is not an official emergency service and does not replace 112 or the warnings issued by Protección Civil, AEMET or regional authorities. Hotspots are satellite detections and may include false positives or arrive late. If there is a fire, call 112.
+      </div>
+    </section>
+  </article>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Atalaya · Política de privacidad</span>
+    <span>Última actualización: 28 de octubre de 2026</span>
+  </div>
+</footer>
+
+</body>
+</html>
